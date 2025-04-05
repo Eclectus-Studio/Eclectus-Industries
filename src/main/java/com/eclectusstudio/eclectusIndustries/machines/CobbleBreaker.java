@@ -5,11 +5,9 @@ import com.eclectusstudio.eclectusIndustries.api.Machine;
 import org.bukkit.Material;
 import org.bukkit.block.*;
 import org.bukkit.block.data.BlockData;
-import org.bukkit.entity.Item;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.FurnaceInventory;
-import org.bukkit.Bukkit;
 
 public class CobbleBreaker implements Machine {
 
