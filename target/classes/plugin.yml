@@ -1,0 +1,12 @@
+name: EclectusIndustries
+version: '1.0-SNAPSHOT'
+main: com.eclectusstudio.eclectusIndustries.Main
+api-version: '1.21'
+authors: [ Minetrio1256 ]
+description: Make machines to automate your world with Eclectus Industries
+commands:
+  givemachineitem:
+    description: Gives you a machine item
+    usage: /givemachineitem <id>
+    permission: giveitem.command
+
