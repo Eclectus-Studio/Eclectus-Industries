@@ -20,7 +20,7 @@ public class CobbleBreaker implements Machine {
     @Override
     public void tick() {
         if (furnaceBlock.getType() == Material.FURNACE) {
-            Furnace furnace = (Furnace) furnaceBlock.getState();
+            Furnace furnace = (Furnace) furnaceBlock.getState(false);
             FurnaceInventory inv = furnace.getInventory();
             System.out.println(furnace.getBurnTime());
 
@@ -37,10 +37,8 @@ public class CobbleBreaker implements Machine {
                     if (fuel.getAmount() > 1) {
                         fuel.setAmount(fuel.getAmount() - 1);
                         furnace.getInventory().setFuel(fuel);
-                        furnace.update();
                     } else {
                         furnace.getInventory().setFuel(null); // If last item, remove fuel
-                        furnace.update();
                     }
 
                     furnace.update();
