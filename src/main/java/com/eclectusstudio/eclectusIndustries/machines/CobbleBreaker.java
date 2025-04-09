@@ -72,6 +72,8 @@ public class CobbleBreaker implements Machine {
                     }
                 }
             }
+        } else {
+            Machines.removeMachine(furnaceBlock);
         }
     }
 
