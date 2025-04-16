@@ -22,7 +22,6 @@ public class CobbleBreaker implements Machine {
         if (furnaceBlock.getType() == Material.FURNACE) {
             Furnace furnace = (Furnace) furnaceBlock.getState(false);
             FurnaceInventory inv = furnace.getInventory();
-            System.out.println(furnace.getBurnTime());
 
             ItemStack fuel = inv.getFuel(); // Get the fuel in the furnace
 
@@ -54,8 +53,6 @@ public class CobbleBreaker implements Machine {
                 // Get the blocks relative to the furnace's facing direction
                 Block behindBlock = furnaceBlock.getRelative(facingDirection.getOppositeFace()); // Chest is behind
                 Block frontBlock = furnaceBlock.getRelative(facingDirection); // Cobblestone in front
-                System.out.println("Behind: " + behindBlock.getType());
-                System.out.println("Front: " + frontBlock.getType());
 
                 // Check if the chest is behind the furnace
                 if (behindBlock.getType() == Material.CHEST) {
