@@ -1,13 +1,15 @@
 package com.eclectusstudio.eclectusIndustries.machines;
 
-import com.eclectusstudio.eclectusIndustries.api.BurnableItems;
 import com.eclectusstudio.eclectusIndustries.api.Machine;
+import com.eclectusstudio.eclectusIndustries.items.Drill;
 import org.bukkit.Material;
 import org.bukkit.block.*;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.FurnaceInventory;
+
+import java.util.Objects;
 
 public class CobbleBreaker implements Machine {
 
@@ -27,7 +29,7 @@ public class CobbleBreaker implements Machine {
 
             // If the furnace isn't burning but has fuel, consume it and add burn time
             if (furnace.getBurnTime() == 0 && fuel != null) {
-                int burnTime = BurnableItems.getBurnTime(fuel.getType());
+                int burnTime = Objects.requireNonNull(fuel.getType().asItemType()).getBurnDuration();
 
                 if (burnTime > 0) { // Ensure it's a valid fuel
                     furnace.setBurnTime((short) burnTime);
@@ -77,5 +79,10 @@ public class CobbleBreaker implements Machine {
     @Override
     public Block getBlock() {
         return this.furnaceBlock;
+    }
+
+    @Override
+    public ItemStack getDrop() {
+        return new Drill().getItem();
     }
 }

@@ -1,5 +1,5 @@
 name: EclectusIndustries
-version: '1.0-SNAPSHOT'
+version: '1.2'
 main: com.eclectusstudio.eclectusIndustries.Main
 api-version: '1.21'
 authors: [ Minetrio1256 ]

@@ -1,9 +1,15 @@
 package com.eclectusstudio.eclectusIndustries.items;
 
+import com.eclectusstudio.eclectusIndustries.Main;
+import com.eclectusstudio.eclectusIndustries.api.Machine;
 import com.eclectusstudio.eclectusIndustries.api.MachineItem;
+import com.eclectusstudio.eclectusIndustries.machines.CobbleBreaker;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.Recipe;
+import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -38,5 +44,29 @@ public class Drill implements MachineItem {
     @Override
     public String getName(){
         return "drill";
+    }
+
+    @Override
+    public Recipe getRecipe() {
+        NamespacedKey key = new NamespacedKey(Main.plugin, "drill");
+        ShapedRecipe recipe = new ShapedRecipe(key, getItem());
+
+        recipe.shape("   ", " X ","YZY");
+
+        recipe.setIngredient('X', Material.IRON_PICKAXE);
+        recipe.setIngredient('Y', Material.TORCH);
+        recipe.setIngredient('Z', Material.FURNACE);
+
+        return recipe;
+    }
+
+    @Override
+    public Machine createMachine(Block block) {
+        return new CobbleBreaker(block);
+    }
+
+    @Override
+    public Material baseBlock() {
+        return Material.FURNACE;
     }
 }

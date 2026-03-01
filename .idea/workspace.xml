@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87745bc9-90b4-446f-946d-12b5313cd6d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eclectusindustries.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="87745bc9-90b4-446f-946d-12b5313cd6d3" name="Changes" comment="removed gradle stuff!">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/BurnableItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/MachineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/MachineItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/MachineItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/api/MachineItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/event/OnBlockBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/event/OnBlockBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/event/OnBlockPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/event/OnBlockPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/items/Drill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/items/Drill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/machines/CobbleBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eclectusstudio/eclectusIndustries/machines/CobbleBreaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="7ed3b6d3e8546daaa323212cb38d8d4e8f42037c" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +60,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Maven.eclectusindustries [ca.bkaw:paper-nms-maven-plugin:1.4.5:init].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eclectusindustries [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
@@ -74,6 +81,23 @@
       <option name="presentableId" value="Default" />
       <updated>1752265672603</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.21.7">
+      <option name="closed" value="true" />
+      <created>1752793668374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752793668375</updated>
+    </task>
+    <task id="LOCAL-00002" summary="removed gradle stuff!">
+      <option name="closed" value="true" />
+      <created>1752794373358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752794373358</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,7 +111,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -98,5 +122,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.21.7" />
+    <MESSAGE value="removed gradle stuff!" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed gradle stuff!" />
   </component>
 </project>

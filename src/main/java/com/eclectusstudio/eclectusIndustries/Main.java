@@ -17,9 +17,13 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public final class Main extends JavaPlugin {
 
+    public static Plugin plugin;
+
     @Override
     public void onEnable() {
         // Plugin startup logic
+        plugin = this;
+
         //Events
         Bukkit.getPluginManager().registerEvents(new OnBlockPlace(), this);
         Bukkit.getPluginManager().registerEvents(new OnBlockBreak(), this);
